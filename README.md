@@ -7,11 +7,13 @@ Cloud-based AWS Lambda functions with a Node.js 12 runtime written in TypeScript
 This repository contains a popuplated SQLite database consisting of 50 users. The goal is to create 3 functions, corresponding to 4 operations on the database: creation, retrieving, listing & searching.
 
 The following REST API is set up already for you (see Practical):
+
 1. A list of users: `GET http://localhost:3000/users`
 2. Get a specific user: `GET http://localhost:3000/user/{id}`
 3. Create a user: `POST http://localhost:3000/user`
 
 Endpoint one should both be able to:
+
 1. List all users
 2. Find all users with a specific first name
 
