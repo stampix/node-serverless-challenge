@@ -21,7 +21,7 @@ Endpoint two and three are straight-forward.
 1. Clone this repo and install the already existing development dependencies.
 2. Install [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 3. Write your functions according to AWS Lambda standards using the Node.js 12 runtime inside `/src/*.ts`
-4. Start the compiler using `yarn compile`, this auto-reflect all your changes.
+4. Start the compiler using `yarn compile`, this will pro-actively compile your changes .
 5. In another terminal, run a local server using `yarn start`, this will make the local endpoints available.
 
 Note: SAM CLI is not the most optimal
