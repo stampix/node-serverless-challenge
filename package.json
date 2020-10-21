@@ -1,0 +1,72 @@
+{
+  "name": "stampix-node-serverless-challlenge",
+  "version": "1.0.0",
+  "description": "Stampix coding challenge focusing on Node.js & Serverless principles",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc --watch",
+    "start": "sam local start-api",
+    "typescript": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/stampix/stampix-node-serverless-challlenge.git"
+  },
+  "author": "Stampix",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/stampix/stampix-node-serverless-challlenge#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "commitlint": "^11.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "express": "^4.17.1",
+    "faker": "^5.1.0",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2",
+    "sqlite3": "^5.0.0",
+    "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint && yarn typescript"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ]
+    },
+    "ignorePatterns": [
+      "node_modules/",
+      "dist/",
+      "scripts/"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}

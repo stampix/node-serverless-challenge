@@ -1,29 +1,51 @@
-# README #
+# Stampix Node.js & Serverless challenge
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Setting
+Cloud-based AWS Lambda functions with a Node.js 12 runtime written in TypeScript.
 
-### What is this repository for? ###
+## Goal
+This repository contains a popuplated SQLite database consisting of 50 users. The goal is to create 3 functions, corresponding to 4 operations on the database: creation, retrieving, listing & searching.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The following REST API is set up already for you (see Practical):
+1. A list of users: `GET http://localhost:3000/users`
+2. Get a specific user: `GET http://localhost:3000/user/{id}`
+3. Create a user: `POST http://localhost:3000/user`
 
-### How do I get set up? ###
+Endpoint one should both be able to:
+1. List all users
+2. Find all users with a specific first name
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Endpoint two and three are straight-forward.
 
-### Contribution guidelines ###
+## Practical
+1. Clone this repo and install the already existing development dependencies.
+2. Install [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+3. Write your functions according to AWS Lambda standards using the Node.js 12 runtime inside `/src/*.ts`
+4. Start the compiler using `yarn compile`, this auto-reflect all your changes.
+5. In another terminal, run a local server using `yarn start`, this will make the local endpoints available.
 
-* Writing tests
-* Code review
-* Other guidelines
+Note: SAM CLI is not the most optimal
 
-### Who do I talk to? ###
+## Requirements
+1. The 3 functions should do what they are supposed to do according to the goals of this challenge.
+2. You should add automatic testing to this repository and add tests for your code. This means you should make the `yarn test` command entirely functional.
 
-* Repo owner or admin
-* Other community or team contact
+**Note**: Don't forget to add tests ;)
+
+## Food for thought
+Think about the following questions and formulate an answer below. Think about the difficulties or edge-cases you would encounter. How would you tackle these?
+
+The number of users suddenly increases to over 10,000. What comes to your mind with relationship to the functionality you just wrote?
+
+Have a look at the datastructure of the database (i.e. have a look at `scripts/populate.js`). Now assume that we are not using SQLite, but MySQL 8. What would you do differently?
+
+Suppose we want to set up a search function for the users where we can search with an arbitrary input value. How would you do this?
+
+### Your answers
+
+<!--
+Write down your answers here
+-->
+
+## Delivery
+Push your solution to your Git platform of choice, as long as it's public.
