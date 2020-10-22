@@ -30,9 +30,8 @@ Note: SAM CLI is not the most optimal
 
 ## Requirements
 1. The 3 functions should do what they are supposed to do according to the goals of this challenge.
-2. You should add automatic testing to this repository and add tests for your code. This means you should make the `yarn test` command entirely functional.
-
-**Note**: Don't forget to add tests ;)
+2. You should add automatic testing and make sure that `yarn test` does what could be expected of it in a CI/CD context.
+3. Document your code as you would in any collaborative project
 
 ## Food for thought
 Think about the following questions and formulate an answer below. Think about the difficulties or edge-cases you would encounter. How would you tackle these?
@@ -50,4 +49,7 @@ Write down your answers here
 -->
 
 ## Delivery
-Push your solution to your Git platform of choice, as long as it's public.
+- Anything that is not enforced in the base repository (tools, dependencies, architecture, frameworks, ...) is free of choice
+- Push your solution to your Git platform of choice, as long as it's public.
+
+**Note**: There's no need to actually use the AWS Cloud.
