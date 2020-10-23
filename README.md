@@ -21,23 +21,9 @@ Endpoint two and three are straight-forward.
 
 ## Practical
 1. Clone this repo and install the already existing development dependencies.
-2. Install [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 3. Write your functions according to AWS Lambda standards using the Node.js 12 runtime inside `/src/*.ts`
 4. Start the compiler using `yarn watch`, this will pro-actively compile your changes .
 5. In another terminal, run a local server using `yarn start`, this will make the local endpoints available.
-
-Note: SAM CLI is not the most optimal
-
-### Notes:
-The SAM CLI runs your code inside docker containers simulating the Lambda environment. If you're developing on non-compatible platform, you might get an error like this:
-
-`Runtime.ImportModuleError: Cannot find module '/var/task/node_modules/sqlite3/lib/binding/napi-v3...`
-
-You might have to manually additionally install the appropriate SQLite binaries:
-
-`cd node_modules/sqlite3 && npm run install -- --target_platform=linux --target_arch=x64 && cd ../..`
-
-
 
 ## Requirements
 1. The 3 functions should do what they are supposed to do according to the goals of this challenge.
