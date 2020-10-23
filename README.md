@@ -35,7 +35,7 @@ The SAM CLI runs your code inside docker containers simulating the Lambda enviro
 
 You might have to manually additionally install the appropriate SQLite binaries:
 
-`cd node_modules/sqlite3 && npm run install -- --target_platform=linux --target_arch=x64`
+`cd node_modules/sqlite3 && npm run install -- --target_platform=linux --target_arch=x64 && cd ../..`
 
 
 
