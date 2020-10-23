@@ -28,6 +28,17 @@ Endpoint two and three are straight-forward.
 
 Note: SAM CLI is not the most optimal
 
+### Notes:
+The SAM CLI runs your code inside docker containers simulating the Lambda environment. If you're developing on non-compatible platform, you might get an error like this:
+
+`Runtime.ImportModuleError: Cannot find module '/var/task/node_modules/sqlite3/lib/binding/napi-v3...`
+
+You might have to manually additionally install the appropriate SQLite binaries:
+
+`cd node_modules/sqlite3 && npm run install -- --target_platform=linux --target_arch=x64`
+
+
+
 ## Requirements
 1. The 3 functions should do what they are supposed to do according to the goals of this challenge.
 2. You should add automatic testing and make sure that `yarn test` does what could be expected of it in a CI/CD context.
