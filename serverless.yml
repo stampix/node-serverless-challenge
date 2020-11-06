@@ -35,7 +35,7 @@ functions:
       - httpApi:
           method: options
           path: /user/{id}
-  callback:
+  create:
     handler: dist/create.handler
     events:
       - httpApi:
