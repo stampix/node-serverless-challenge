@@ -39,6 +39,8 @@ Have a look at the datastructure of the database (i.e. have a look at `scripts/p
 
 Suppose we want to set up a search function for the users where we can search with an arbitrary input value. How would you do this?
 
+Overall, how much time did you spent (approximately) on this challenge?
+
 ### Your answers
 
 <!--
