@@ -1,7 +1,7 @@
 # Stampix Node.js & Serverless challenge
 
 ## Setting
-Cloud-based AWS Lambda functions with a Node.js 12 runtime written in TypeScript.
+Cloud-based AWS Lambda functions with a Node.js 14 runtime written in TypeScript.
 
 ## Goal
 This repository contains a populated SQLite database consisting of 50 users. The goal is to create 3 functions, corresponding to 4 operations on the database: creation, retrieving, listing & searching.
