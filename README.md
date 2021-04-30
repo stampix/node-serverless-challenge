@@ -21,7 +21,7 @@ Endpoint two and three are straight-forward.
 
 ## Practical
 1. Clone this repo and install the already existing development dependencies.
-3. Write your functions according to AWS Lambda standards using the Node.js 12 runtime inside `/src/*.ts`
+3. Write your functions according to AWS Lambda standards using the Node.js 14 runtime inside `/src/*.ts`
 4. Start the compiler using `yarn watch`, this will pro-actively compile your changes .
 5. In another terminal, run a local server using `yarn start`, this will make the local endpoints available.
 
